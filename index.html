@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container my-2 text-light p-5">
+        <form class="row g-3">
+            <h1>Book a Free Call</h1>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Name</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Phone Number</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-6">
+                <label for="inputAddress" class="form-label">Email Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-6">
+            <label for="inputState" class="form-label">Preferred Country*</label>
+            <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+            </div>
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Enrolment Month*</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Admit Status*</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+          
+            <div class="d-grid col-12 req-btn">
+                <button type="submit" class="btn btn-primary">Request a Call Back</button>
+            </div>
+
+            <div class="container social-links">
+                <a href="">
+                    <div class="image_container">
+                        <img alt="svgImg"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTSA5Ljk5ODA0NjkgMyBDIDYuMTM5MDQ2OSAzIDMgNi4xNDE5NTMxIDMgMTAuMDAxOTUzIEwgMyAyMC4wMDE5NTMgQyAzIDIzLjg2MDk1MyA2LjE0MTk1MzEgMjcgMTAuMDAxOTUzIDI3IEwgMjAuMDAxOTUzIDI3IEMgMjMuODYwOTUzIDI3IDI3IDIzLjg1ODA0NyAyNyAxOS45OTgwNDcgTCAyNyA5Ljk5ODA0NjkgQyAyNyA2LjEzOTA0NjkgMjMuODU4MDQ3IDMgMTkuOTk4MDQ3IDMgTCA5Ljk5ODA0NjkgMyB6IE0gMjIgNyBDIDIyLjU1MiA3IDIzIDcuNDQ4IDIzIDggQyAyMyA4LjU1MiAyMi41NTIgOSAyMiA5IEMgMjEuNDQ4IDkgMjEgOC41NTIgMjEgOCBDIDIxIDcuNDQ4IDIxLjQ0OCA3IDIyIDcgeiBNIDE1IDkgQyAxOC4zMDkgOSAyMSAxMS42OTEgMjEgMTUgQyAyMSAxOC4zMDkgMTguMzA5IDIxIDE1IDIxIEMgMTEuNjkxIDIxIDkgMTguMzA5IDkgMTUgQyA5IDExLjY5MSAxMS42OTEgOSAxNSA5IHogTSAxNSAxMSBBIDQgNCAwIDAgMCAxMSAxNSBBIDQgNCAwIDAgMCAxNSAxOSBBIDQgNCAwIDAgMCAxOSAxNSBBIDQgNCAwIDAgMCAxNSAxMSB6Ij48L3BhdGg+Cjwvc3ZnPg==" />
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="image_container">
+                        <img alt="svgImg"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTTksMjVINFYxMGg1VjI1eiBNNi41MDEsOEM1LjExOCw4LDQsNi44NzksNCw1LjQ5OVM1LjEyLDMsNi41MDEsM0M3Ljg3OSwzLDksNC4xMjEsOSw1LjQ5OUM5LDYuODc5LDcuODc5LDgsNi41MDEsOHogTTI3LDI1aC00LjgwN3YtNy4zYzAtMS43NDEtMC4wMzMtMy45OC0yLjQ5OS0zLjk4Yy0yLjUwMywwLTIuODg4LDEuODk2LTIuODg4LDMuODU0VjI1SDEyVjkuOTg5aDQuNjE0djIuMDUxaDAuMDY1IGMwLjY0Mi0xLjE4LDIuMjExLTIuNDI0LDQuNTUxLTIuNDI0YzQuODcsMCw1Ljc3LDMuMTA5LDUuNzcsNy4xNTFDMjcsMTYuNzY3LDI3LDI1LDI3LDI1eiI+PC9wYXRoPgo8L3N2Zz4=" />
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="image_container">
+                        <img alt="svgImg"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTSAxNSA0IEMgMTAuODE0IDQgNS4zODA4NTk0IDUuMDQ4ODI4MSA1LjM4MDg1OTQgNS4wNDg4MjgxIEwgNS4zNjcxODc1IDUuMDY0NDUzMSBDIDMuNDYwNjYzMiA1LjM2OTM2NDUgMiA3LjAwNzYyNDUgMiA5IEwgMiAxNSBMIDIgMTUuMDAxOTUzIEwgMiAyMSBMIDIgMjEuMDAxOTUzIEEgNCA0IDAgMCAwIDUuMzc2OTUzMSAyNC45NDUzMTIgTCA1LjM4MDg1OTQgMjQuOTUxMTcyIEMgNS4zODA4NTk0IDI0Ljk1MTE3MiAxMC44MTQgMjYuMDAxOTUzIDE1IDI2LjAwMTk1MyBDIDE5LjE4NiAyNi4wMDE5NTMgMjQuNjE5MTQxIDI0Ljk1MTE3MiAyNC42MTkxNDEgMjQuOTUxMTcyIEwgMjQuNjIxMDk0IDI0Ljk0OTIxOSBBIDQgNCAwIDAgMCAyOCAyMS4wMDE5NTMgTCAyOCAyMSBMIDI4IDE1LjAwMTk1MyBMIDI4IDE1IEwgMjggOSBBIDQgNCAwIDAgMCAyNC42MjMwNDcgNS4wNTQ2ODc1IEwgMjQuNjE5MTQxIDUuMDQ4ODI4MSBDIDI0LjYxOTE0MSA1LjA0ODgyODEgMTkuMTg2IDQgMTUgNCB6IE0gMTIgMTAuMzk4NDM4IEwgMjAgMTUgTCAxMiAxOS42MDE1NjIgTCAxMiAxMC4zOTg0MzggeiI+PC9wYXRoPgo8L3N2Zz4=" />
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="image_container">
+                        <img alt="svgImg"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTTI4LDYuOTM3Yy0wLjk1NywwLjQyNS0xLjk4NSwwLjcxMS0zLjA2NCwwLjg0YzEuMTAyLTAuNjYsMS45NDctMS43MDUsMi4zNDUtMi45NTFjLTEuMDMsMC42MTEtMi4xNzIsMS4wNTUtMy4zODgsMS4yOTUgYy0wLjk3My0xLjAzNy0yLjM1OS0xLjY4NS0zLjg5My0xLjY4NWMtMi45NDYsMC01LjMzNCwyLjM4OS01LjMzNCw1LjMzNGMwLDAuNDE4LDAuMDQ4LDAuODI2LDAuMTM4LDEuMjE1IGMtNC40MzMtMC4yMjItOC4zNjMtMi4zNDYtMTAuOTk1LTUuNTc0QzMuMzUxLDYuMTk5LDMuMDg4LDcuMTE1LDMuMDg4LDguMDk0YzAsMS44NSwwLjk0MSwzLjQ4MywyLjM3Miw0LjQzOSBjLTAuODc0LTAuMDI4LTEuNjk3LTAuMjY4LTIuNDE2LTAuNjY3YzAsMC4wMjMsMCwwLjA0NCwwLDAuMDY3YzAsMi41ODUsMS44MzgsNC43NDEsNC4yNzksNS4yMyBjLTAuNDQ3LDAuMTIyLTAuOTE5LDAuMTg3LTEuNDA2LDAuMTg3Yy0wLjM0MywwLTAuNjc4LTAuMDM0LTEuMDAzLTAuMDk1YzAuNjc5LDIuMTE5LDIuNjQ5LDMuNjYyLDQuOTgzLDMuNzA1IGMtMS44MjUsMS40MzEtNC4xMjUsMi4yODQtNi42MjUsMi4yODRjLTAuNDMsMC0wLjg1NS0wLjAyNS0xLjI3My0wLjA3NWMyLjM2MSwxLjUxMyw1LjE2NCwyLjM5Niw4LjE3NywyLjM5NiBjOS44MTIsMCwxNS4xNzYtOC4xMjgsMTUuMTc2LTE1LjE3N2MwLTAuMjMxLTAuMDA1LTAuNDYxLTAuMDE1LTAuNjlDMjYuMzgsOC45NDUsMjcuMjg1LDguMDA2LDI4LDYuOTM3eiI+PC9wYXRoPgo8L3N2Zz4=" />
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="image_container">
+                        <img alt="svgImg"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTSAxNSAzIEMgOC4zNzMgMyAzIDguMzczIDMgMTUgQyAzIDE3LjI1MTIwOCAzLjYzMjM0MTUgMTkuMzUwMDY4IDQuNzEwOTM3NSAyMS4xNTAzOTEgTCAzLjEwNzQyMTkgMjcgTCA5LjA4MjAzMTIgMjUuNDMxNjQxIEMgMTAuODI5MzU0IDI2LjQyNTA2MiAxMi44NDY0OSAyNyAxNSAyNyBDIDIxLjYyNyAyNyAyNyAyMS42MjcgMjcgMTUgQyAyNyA4LjM3MyAyMS42MjcgMyAxNSAzIHogTSAxMC44OTI1NzggOS40MDIzNDM4IEMgMTEuMDg3NTc4IDkuNDAyMzQzOCAxMS4yODc5MzcgOS40MDExNTYyIDExLjQ2MDkzOCA5LjQxMDE1NjIgQyAxMS42NzQ5MzggOS40MTUxNTYzIDExLjkwNzg1OSA5LjQzMDgyODEgMTIuMTMwODU5IDkuOTIzODI4MSBDIDEyLjM5NTg1OSAxMC41MDk4MjggMTIuOTcyODc1IDExLjk3OTkwNiAxMy4wNDY4NzUgMTIuMTI4OTA2IEMgMTMuMTIwODc1IDEyLjI3NzkwNiAxMy4xNzMzMTMgMTIuNDUzNDM3IDEzLjA3MDMxMiAxMi42NDg0MzggQyAxMi45NzIzMTIgMTIuODQ4NDM3IDEyLjkyMTM0NCAxMi45Njk0ODQgMTIuNzc3MzQ0IDEzLjE0NjQ4NCBDIDEyLjYyODM0NCAxMy4zMTg0ODQgMTIuNDY1MDc4IDEzLjUzMjEwOSAxMi4zMzAwNzggMTMuNjYyMTA5IEMgMTIuMTgxMDc4IDEzLjgxMTEwOSAxMi4wMjcyMTkgMTMuOTc0NDg0IDEyLjE5OTIxOSAxNC4yNzE0ODQgQyAxMi4zNzEyMTkgMTQuNTY4NDg0IDEyLjk2ODU2MyAxNS41NDIxMjUgMTMuODUxNTYyIDE2LjMyODEyNSBDIDE0Ljk4NjU2MiAxNy4zNDIxMjUgMTUuOTQ0MTg4IDE3LjY1MzczNCAxNi4yNDIxODggMTcuODAyNzM0IEMgMTYuNTQwMTg3IDE3Ljk1MTczNCAxNi43MTI3NjYgMTcuOTI4NTE2IDE2Ljg4NDc2NiAxNy43Mjg1MTYgQyAxNy4wNjE3NjYgMTcuNTMzNTE2IDE3LjYyODEyNSAxNi44NjQ0MDYgMTcuODI4MTI1IDE2LjU2NjQwNiBDIDE4LjAyMzEyNSAxNi4yNjg0MDYgMTguMjIyMTg4IDE2LjMxOTk2OSAxOC40OTIxODggMTYuNDE3OTY5IEMgMTguNzY2MTg4IDE2LjUxNTk2OSAyMC4yMjczOTEgMTcuMjM1NzY2IDIwLjUyNTM5MSAxNy4zODQ3NjYgQyAyMC44MjMzOTEgMTcuNTMzNzY2IDIxLjAxODc1IDE3LjYwNzUxNiAyMS4wOTM3NSAxNy43Mjg1MTYgQyAyMS4xNzA3NSAxNy44NTM1MTYgMjEuMTcwODI4IDE4LjQ0ODU3OCAyMC45MjM4MjggMTkuMTQyNTc4IEMgMjAuNjc2ODI4IDE5LjgzNTU3OCAxOS40NjM5MjIgMjAuNTA1NzM0IDE4LjkxOTkyMiAyMC41NTI3MzQgQyAxOC4zNzA5MjIgMjAuNjAzNzM0IDE3Ljg1ODU2MiAyMC43OTk1IDE1LjM1MTU2MiAxOS44MTI1IEMgMTIuMzI3NTYzIDE4LjYyMTUgMTAuNDIwNDg0IDE1LjUyNDIxOSAxMC4yNzE0ODQgMTUuMzI0MjE5IEMgMTAuMTIyNDg0IDE1LjEyOTIxOSA5LjA2MDU0NjkgMTMuNzEzOTA2IDkuMDYwNTQ2OSAxMi4yNTM5MDYgQyA5LjA2MDU0NjkgMTAuNzg4OTA2IDkuODI4NjU2MyAxMC4wNzE0MzcgMTAuMDk3NjU2IDkuNzczNDM3NSBDIDEwLjM3MTY1NiA5LjQ3NTQzNzUgMTAuNjkyNTc4IDkuNDAyMzQzOCAxMC44OTI1NzggOS40MDIzNDM4IHoiPjwvcGF0aD4KPC9zdmc+" />
+                    </div>
+                </a>
+            </div>
+        </form>
+        
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
